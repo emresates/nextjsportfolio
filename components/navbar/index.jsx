@@ -2,8 +2,9 @@
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
+
+//* ICONS
 import { AiOutlineHome } from "react-icons/ai";
 import { BsFillFilePersonFill } from "react-icons/bs";
 import { MdOutlineContactPhone } from "react-icons/md";
@@ -46,7 +47,7 @@ function Navbar() {
 
   const pathname = usePathname();
   return (
-    <header
+    <nav
       className="fixed bottom-0 top-0 z-50 mt-auto flex h-max w-full 
       flex-col items-center gap-y-4 
       xl:right-[2%] xl:h-screen xl:w-16 xl:max-w-md xl:justify-center      "
@@ -83,7 +84,7 @@ function Navbar() {
           {mode === "dark" ? <BsLightbulbOff /> : <BsLightbulb />}
         </button>
       </div>
-    </header>
+    </nav>
   );
 }
 

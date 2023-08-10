@@ -3,7 +3,7 @@ import HeroText from "../../components/heroText";
 
 function HomeContainer() {
   return (
-    <div className="flex h-screen w-screen">
+    <div className="flex h-screen w-screen pl-28 overflow-hidden">
       <div className="flex h-screen w-3/5 items-center justify-center">
         <HeroText text="Hi,&nbsp;I'm&nbsp;Emre, Frontend&nbsp;Developer" />
       </div>
