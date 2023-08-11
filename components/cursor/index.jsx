@@ -1,42 +1,45 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
+import dynamic from "next/dynamic";
 
 function Cursor() {
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
+  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+    ssr: false,
   });
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    window.addEventListener("mousemove", mouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-    },
-  };
-
   return (
-    <motion.div
-      variants={variants}
-      animate="default"
-      className="fixed left-0 top-0 h-8 w-8 rounded-full bg-red-200"
-    ></motion.div>
+    <>
+      <AnimatedCursor
+        color="255, 255, 255"
+        innerSize={20}
+        outerSize={25}
+        innerScale={2}
+        outerScale={3}
+        outerAlpha={0}
+        innerStyle={{
+          backgroundColor: "white",
+          mixBlendMode: "difference",
+        }}
+        outerStyle={{
+          mixBlendMode: "difference",
+        }}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "button",
+          "textarea",
+          ".link",
+          {
+            target: ".hero",
+          },
+        ]}
+      />
+    </>
   );
 }
 

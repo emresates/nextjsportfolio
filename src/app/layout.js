@@ -2,6 +2,7 @@ import Header from "../../components/header";
 import Navbar from "../../components/navbar";
 import "./globals.css";
 import { Stick_No_Bills } from "next/font/google";
+import Cursor from "../../components/cursor";
 
 const inter = Stick_No_Bills({ subsets: ["latin"] });
 
@@ -14,6 +15,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <body
@@ -22,6 +25,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navbar />
         <main>{children}</main>
+        <Cursor />
       </body>
     </html>
   );

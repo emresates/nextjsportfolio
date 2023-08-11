@@ -52,7 +52,7 @@ function Navbar() {
         })}
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className="group relative flex items-center transition-all duration-300"
+          className="light group relative flex items-center transition-all duration-300"
         >
           {mode === "dark" ? <BsLightbulbOff /> : <BsLightbulb />}
           <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
