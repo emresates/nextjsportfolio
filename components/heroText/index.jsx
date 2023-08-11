@@ -7,7 +7,7 @@ function HeroText({ text }) {
     .map((letter, index) => <TextSpan key={index}>{letter}</TextSpan>);
   return (
     <>
-      <div>
+      <div className="break-words">
         {letterSpans.slice(0, 3)}
         {letterSpans[3]}
         <br />

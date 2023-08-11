@@ -5,42 +5,9 @@ import { usePathname } from "next/navigation";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 
 //* ICONS
-import { AiOutlineHome } from "react-icons/ai";
-import { BsFillFilePersonFill } from "react-icons/bs";
-import { MdOutlineContactPhone } from "react-icons/md";
-import { MdComputer } from "react-icons/md";
 import { BsLightbulb } from "react-icons/bs";
 import { BsLightbulbOff } from "react-icons/bs";
-import { PiProjectorScreenChartBold } from "react-icons/pi";
-
-export const navData = [
-  {
-    name: "home",
-    path: "/",
-    icon: <AiOutlineHome />,
-  },
-  {
-    name: "about",
-    path: "/about",
-    icon: <BsFillFilePersonFill />,
-  },
-  {
-    name: "projects",
-    path: "/projects",
-    icon: <PiProjectorScreenChartBold />,
-  },
-  {
-    name: "skills",
-    path: "/skills",
-    icon: <MdComputer />,
-  },
-
-  {
-    name: "contact",
-    path: "/contact",
-    icon: <MdOutlineContactPhone />,
-  },
-];
+import { navData } from "../../data/navData";
 
 function Navbar() {
   const [mode, setMode] = useThemeSwitcher();
@@ -68,20 +35,35 @@ function Navbar() {
               key={index}
               href={link.path}
             >
+              {/* Tooltip */}
               <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
                 <div className="relative flex items-center rounded-md bg-black p-[6px] text-white dark:bg-white dark:text-red-500">
                   <p className="text-[12px] font-semibold capitalize leading-none">
                     {link.name}
                   </p>
+                  {/* Right Arrow */}
                   <span className="absolute -right-2 border-y-[6px] border-l-8 border-r-0 border-solid border-y-transparent border-l-black dark:border-l-white"></span>
                 </div>
               </div>
+              {/* Nav Item */}
               <div>{link.icon}</div>
             </Link>
           );
         })}
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+        <button
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          className="group relative flex items-center transition-all duration-300"
+        >
           {mode === "dark" ? <BsLightbulbOff /> : <BsLightbulb />}
+          <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
+            <div className="relative flex items-center rounded-md bg-black p-[6px] text-white dark:bg-white dark:text-red-500">
+              <p className="text-[12px] font-semibold capitalize leading-none w-12">
+                {mode !== "dark" ? "Turn Off the Lights" : "Turn On the Lights"}
+              </p>
+              {/* Right Arrow */}
+              <span className="absolute -right-2 border-y-[6px] border-l-8 border-r-0 border-solid border-y-transparent border-l-black dark:border-l-white"></span>
+            </div>
+          </div>
         </button>
       </div>
     </nav>
