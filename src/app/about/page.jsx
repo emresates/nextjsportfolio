@@ -9,7 +9,7 @@ function AboutPage() {
         <div className="mt:32 w-full px-20 xl:mt-0 xl:w-2/3 xl:pl-32">
           <div className="mt-20 xl:mt-0">
             <p className="text-2xl">Introduction</p>
-            <h2 className="text-5xl xl:text-9xl">About Me</h2>
+            <h2 className="text-5xl text-red-500  xl:text-9xl">About Me</h2>
           </div>
           <p className="text-xl tracking-wider">
             My proficiency lies in creating interactive and visually appealing
