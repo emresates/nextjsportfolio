@@ -1,6 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
+//* Icons
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
@@ -10,7 +13,13 @@ import { BiLogoPinterestAlt } from "react-icons/bi";
 
 function Socials() {
   return (
-    <div className="flex items-center gap-x-5 text-3xl">
+    <motion.div
+      variants={fadeIn("left", 0.4)}
+      initial="hidden"
+      animate="show"
+      exit="hidden"
+      className="flex items-center gap-x-5 text-3xl"
+    >
       <Link
         href="https://www.instagram.com/secenory/"
         target="_blank"
@@ -39,7 +48,7 @@ function Socials() {
       >
         <BiLogoPinterestAlt />
       </Link>
-    </div>
+    </motion.div>
   );
 }
 

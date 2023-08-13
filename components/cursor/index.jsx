@@ -11,10 +11,10 @@ function Cursor() {
       <AnimatedCursor
         color="255, 255, 255"
         innerSize={20}
-        outerSize={25}
-        innerScale={2}
-        outerScale={3}
-        outerAlpha={0}
+        outerSize={22}
+        innerScale={2.4}
+        outerScale={2.6}
+        outerAlpha={1}
         innerStyle={{
           backgroundColor: "white",
           mixBlendMode: "difference",
