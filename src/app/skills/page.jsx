@@ -1,10 +1,6 @@
-"use client";
 import React from "react";
-import { OrbitControls, Stage } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-
-import Computer from "../../../objects/Computer";
-import Atom from "../../../objects/Atom";
+import AtomObject from "../../../objects/AtomObject";
+import ComputerObject from "../../../objects/ComputerObject";
 
 export const metadata = {
   title: "Skills | Emre Ates",
@@ -21,12 +17,7 @@ function SkillsPage() {
         <h1 className="text-3xl">My Skills</h1>
         <div className="flex flex-col items-center justify-center gap-10">
           <div className="flex gap-x-6">
-            <Canvas>
-              <Stage environment="city" intensity={0.6}>
-                <Atom />
-              </Stage>
-              <OrbitControls enableZoom={false} autoRotate />
-            </Canvas>
+            <AtomObject />
           </div>
           <div className="flex gap-x-6">
             <img className="h-20" src="next.png" alt="" />
@@ -54,18 +45,7 @@ function SkillsPage() {
         </div>
       </div>
       <div className="flex h-screen w-2/5">
-        <Canvas>
-          <Stage environment="city" intensity={0.6}>
-            <Computer />
-          </Stage>
-          <OrbitControls enableZoom={false} />
-        </Canvas>
-        {/* <Canvas>
-          <Stage environment="city" intensity={0.6}>
-            <Atom />
-          </Stage>
-          <OrbitControls enableZoom={false} autoRotate />
-        </Canvas> */}
+        <ComputerObject />
       </div>
     </div>
   );
