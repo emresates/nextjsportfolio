@@ -1,40 +1,69 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+
+//* Components
 import { fadeIn } from "../../../variants";
 import Map from "../../../components/map";
-import emailjs from "@emailjs/browser";
+
+//* ICONS
+import { BiMailSend } from "react-icons/bi";
+import { AiOutlineLoading } from "react-icons/ai";
 
 function Contact() {
   const ref = useRef();
-  const [success, setSuccess] = useState();
-  console.log(ref.current);
+  const [success, setSuccess] = useState("");
+
+  useEffect(() => {
+    if (success === "successful") {
+      const timeout = setTimeout(() => {
+        setSuccess("");
+        ref.current.reset();
+      }, 3000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [success]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_jh8jdmc",
-        "template_msf4xso",
-        ref.current,
-        "uQKHaO308olUzpUHl",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccess(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccess(false);
-        },
-      );
+    const name = ref.current.name.value;
+    const email = ref.current.email.value;
+    const subject = ref.current.subject.value;
+    const message = ref.current.message.value;
+
+    console.log(name, email, subject, message);
+
+    if (name === "" || email === "" || subject === "" || message === "") {
+      setSuccess("warning");
+      return;
+    } else {
+      setSuccess("sending");
+      emailjs
+        .sendForm(
+          "service_jh8jdmc",
+          "template_msf4xso",
+          ref.current,
+          "uQKHaO308olUzpUHl",
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setSuccess("successful");
+          },
+          (error) => {
+            console.log(error.text);
+            setSuccess("error");
+          },
+        );
+    }
   };
-  console.log(success);
   return (
     <div className="bg-primary/30 h-full">
-      <div className="flex h-full xl:text-left">
-        <div className="flex h-screen w-2/3 flex-col items-center justify-center pl-28">
+      <div className="h-full xl:flex xl:text-left">
+        <div className="flex h-screen w-screen flex-col items-center justify-center p-8 xl:w-2/3 xl:pl-28">
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -47,43 +76,65 @@ function Contact() {
           <form
             ref={ref}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 text-2xl"
+            className="flex w-full flex-col gap-4 text-2xl sm:w-auto"
           >
-            <div className="flex w-full gap-x-6">
+            <div className="flex w-full flex-col gap-4 sm:flex-row sm:gap-x-6">
               <input
                 type="text"
                 placeholder="Name"
                 name="name"
-                className="rounded-lg border-2 border-solid border-red-700 bg-transparent px-3 py-2 shadow shadow-red-700 outline-none"
+                className="w-full rounded-lg border-2 border-solid border-red-700 bg-transparent px-3 py-2 shadow shadow-red-700 outline-none"
               />
               <input
                 type="text"
                 placeholder="Email"
                 name="email"
-                className="rounded-lg border-2 border-solid border-red-700 bg-transparent px-3 py-2 shadow shadow-red-700 outline-none"
+                className="w-full rounded-lg border-2 border-solid border-red-700 bg-transparent px-3 py-2 shadow shadow-red-700 outline-none"
               />
             </div>
             <input
               type="text"
               placeholder="Subject"
               name="subject"
-              className="rounded-lg border-2 border-solid border-red-700 bg-transparent px-3 py-2 shadow shadow-red-700 outline-none"
+              className="w-full rounded-lg border-2 border-solid border-red-700 bg-transparent px-3 py-2 shadow shadow-red-700 outline-none"
             />
             <textarea
               placeholder="Message"
               name="message"
-              className="h-32 resize-none rounded-lg border-2 border-solid border-red-700 bg-transparent p-3 shadow shadow-red-700 outline-none"
+              className="h-32 w-full resize-none rounded-lg border-2 border-solid border-red-700 bg-transparent p-3 shadow shadow-red-700 outline-none"
             />
-            <button
-              type="submit"
-              className="float-right w-20 rounded-md border-red-700 px-3 py-1 shadow-lg shadow-red-700"
-            >
-              Send
-            </button>
-            {success && "Successful"}
+            <div className="flex flex-row-reverse justify-between">
+              <button
+                type="submit"
+                className="relative float-right flex h-10 w-20 items-center justify-center rounded-md border-red-700 px-3 py-1 shadow-lg shadow-red-700"
+              >
+                {success === "successful" ? (
+                  <BiMailSend />
+                ) : success === "sending" ? (
+                  <AiOutlineLoading className="animate-spin text-center" />
+                ) : (
+                  <>
+                    <span className="absolute right-0 top-0">
+                      <span className="relative right-0 top-0 flex h-3 w-3">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                        <span className="relative inline-flex h-3 w-3 rounded-full bg-red-500"></span>
+                      </span>
+                    </span>
+                    <span>Send</span>
+                  </>
+                )}
+              </button>
+              {success === "warning"
+                ? "Please fill in all fields."
+                : success === "error"
+                ? "Something went wrong."
+                : success === "successful"
+                ? "Mail has been sent successfully."
+                : ""}
+            </div>
           </form>
         </div>
-        <div className="flex w-2/3 flex-col">
+        <div className="flex w-screen flex-col xl:w-2/3">
           <Map />
         </div>
       </div>
