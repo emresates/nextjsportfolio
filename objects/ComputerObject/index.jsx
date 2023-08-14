@@ -5,7 +5,7 @@ import Computer from "./Computer";
 
 function ComputerObject() {
   return (
-    <Canvas>
+    <Canvas className="w-full h-full">
       <Stage environment="city" intensity={0.6}>
         <Computer />
       </Stage>

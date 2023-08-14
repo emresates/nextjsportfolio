@@ -1,16 +1,12 @@
 "use client";
+
 import React from "react";
 import HeroText from "../../components/heroText";
 import Lottie from "lottie-react";
-import animationData from "../../public/hero-anim.json";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 
-// motion.h2
-// variants={fadeIn("up", 0.2)}
-// initial="hidden"
-// animate="show"
-// exit="hidden"
+import animationData from "../../public/hero-anim.json";
+import { fadeIn } from "../../variants";
 
 function HomeContainer() {
   return (
