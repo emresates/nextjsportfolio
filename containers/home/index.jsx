@@ -7,10 +7,13 @@ import { motion } from "framer-motion";
 
 import animationData from "../../public/hero-anim.json";
 import { fadeIn } from "../../variants";
+import MarqueeRow from "../../components/marqueeRow";
+import Cards from "../../components/cards";
+import MouseScroll from "../../components/mouseScroll";
 
 function HomeContainer() {
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="flex h-screen w-screen overflow-hidden pl-28">
         <motion.div
           variants={fadeIn("right", 0.2)}
@@ -31,7 +34,10 @@ function HomeContainer() {
           <Lottie animationData={animationData} />
         </motion.div>
       </div>
-    </>
+      <MarqueeRow />
+      <Cards />
+      <MouseScroll />
+    </div>
   );
 }
 

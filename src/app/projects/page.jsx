@@ -1,4 +1,7 @@
 import React from "react";
+import HoverImageContainer from "../../../components/imageContainer";
+import Project from "../../../components/3dcard/Project";
+import Link from "next/link";
 
 export const metadata = {
   title: "Projects | Emre Ates",
@@ -9,7 +12,44 @@ export const metadata = {
 };
 
 function ProjectsPage() {
-  return <div>ProjectsPage</div>;
+  return (
+    <div className="mx-auto w-[84%] pt-28">
+      <div className="mb-6 flex gap-6">
+        <div className="flex h-[400px] w-3/5 items-center justify-center">
+          <p className="text-5xl uppercase">prominent projects</p>
+        </div>
+        <div className="relative h-[400px] w-2/5 overflow-hidden">
+          <Link
+            href="https://github.com/emresates/movieappnext"
+            target="_blank"
+          >
+            <Project
+              thumb="nextmovies/nextmovies2.png"
+              pid="nextmovies/nextmoviesthumb.png"
+            />
+          </Link>
+        </div>
+      </div>
+      <div className="mb-6 flex flex-row-reverse gap-6 ">
+        <div className="relative h-[400px] w-3/5">
+          <HoverImageContainer
+            imgLeft="./projects/trippy/agency1.png"
+            imgCenter="./projects/trippy/agency2.png"
+            imgRight="./projects/trippy/agency3.png"
+            imgThumb="./projects/trippy/agencythumb.png"
+          />
+        </div>
+        <div className="relative h-[400px] w-2/5">
+          <HoverImageContainer
+            imgCenter="./projects/photo/pho2.png"
+            imgLeft="./projects/photo/phto.png"
+            imgRight="./projects/photo/pho1.png"
+            imgThumb="./projects/photo/pho1.png"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default ProjectsPage;

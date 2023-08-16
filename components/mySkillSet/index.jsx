@@ -23,19 +23,14 @@ function MySkillSet() {
         <div className="m-auto flex w-full flex-wrap items-center justify-center gap-5 p-4 sm:w-3/5 sm:p-20 xl:px-60">
           {cardData.map((card, index) => (
             <motion.div
+              key={index}
               variants={fadeIn("right", 0.2 + index * 0.1)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
               className="relative h-12 w-12 sm:h-20 sm:w-20"
             >
-              <Image
-                unoptimized
-                key={index}
-                alt={card.title}
-                src={card.image}
-                fill
-              />
+              <Image unoptimized alt={card.title} src={card.image} fill />
             </motion.div>
           ))}
         </div>

@@ -1,66 +1,66 @@
 export const cardData = [
   {
     title: "Reactjs",
-    image: "react.png",
+    image: "./skills/react.png",
   },
   {
     title: "Nextjs",
-    image: "next.png",
+    image: "./skills/next.png",
   },
   {
     title: "Javascript",
-    image: "js.png",
+    image: "./skills/js.png",
   },
   {
     title: "Html",
-    image: "html.png",
+    image: "./skills/html.png",
   },
   {
     title: "Css",
-    image: "css.png",
+    image: "./skills/css.png",
   },
   {
     title: "Sass",
-    image: "sass.png",
+    image: "./skills/sass.png",
   },
   {
     title: "Bootstrap",
-    image: "bootstrap.png",
+    image: "./skills/bootstrap.png",
   },
   {
     title: "Tailwind",
-    image: "tailwind.png",
+    image: "./skills/tailwind.png",
   },
   {
     title: "Styled Components",
-    image: "sc.png",
+    image: "./skills/sc.png",
   },
   {
     title: "Material Ui",
-    image: "mui.png",
+    image: "./skills/mui.png",
   },
   {
     title: "Jquery",
-    image: "jquery.png",
+    image: "./skills/jquery.png",
   },
   {
     title: "Redux",
-    image: "redux.png",
+    image: "./skills/redux.png",
   },
   {
     title: "Graphql",
-    image: "graphql.png",
+    image: "./skills/graphql.png",
   },
   {
     title: "Nodejs",
-    image: "node.png",
+    image: "./skills/node.png",
   },
   {
     title: "MongoDB",
-    image: "mongo.png",
+    image: "./skills/mongo.png",
   },
   {
     title: "PostgreSQL",
-    image: "postgre.png",
+    image: "./skills/postgre.png",
   },
 ];

@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 function MarqueeRow() {
   return (
-    <div className="xl:px-28 px-6">
+    <div className="xl:px-28 px-6 my-10">
       <h1 className="flex items-center justify-center pb-12 text-4xl font-medium uppercase leading-tight tracking-widest md:justify-start">
         Recents
       </h1>

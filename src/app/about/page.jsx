@@ -1,6 +1,5 @@
 import React from "react";
-import MarqueeRow from "../../../components/marqueeRow";
-import Cards from "../../../components/cards";
+
 import MySkillSet from "../../../components/mySkillSet";
 import AboutInfo from "../../../components/aboutInfo";
 import MouseScroll from "../../../components/mouseScroll";
@@ -17,9 +16,7 @@ function AboutPage() {
   return (
     <div className="mb-24 select-none overflow-x-hidden xl:mb-0">
       <AboutInfo />
-      <MarqueeRow />
       <MySkillSet />
-      <Cards />
       <MouseScroll />
     </div>
   );

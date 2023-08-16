@@ -10,21 +10,19 @@ import { BsLightbulbOff } from "react-icons/bs";
 import { navData } from "../../data/navData";
 
 function Navbar() {
-  const [mode, setMode] = useThemeSwitcher();
+  const [mode, setMode] = useThemeSwitcher("dark");
 
   const pathname = usePathname();
   return (
     <nav
       className="fixed bottom-0 top-0 z-50 mt-auto flex h-max w-full 
       flex-col items-center gap-y-4 
-      xl:right-[2%] xl:h-screen xl:w-16 xl:max-w-md xl:justify-center      "
+      xl:right-[2%] xl:h-screen xl:w-16 xl:max-w-md xl:justify-center"
     >
       <div
         className="flex h-[80px] w-full items-center justify-between gap-y-10  bg-black/20 px-4 py-8 text-3xl
         text-black backdrop-blur-sm dark:bg-white/10 dark:text-white md:px-40 xl:h-max xl:flex-col xl:justify-center xl:rounded-full
-        xl:px-0 xl:text-xl
-        
-        "
+        xl:px-0 xl:text-xl"
       >
         {navData.map((link, index) => {
           return (
@@ -57,7 +55,7 @@ function Navbar() {
           {mode === "dark" ? <BsLightbulbOff /> : <BsLightbulb />}
           <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
             <div className="relative flex items-center rounded-md bg-black p-[6px] text-white dark:bg-white dark:text-red-500">
-              <p className="text-[12px] font-semibold capitalize leading-none w-12">
+              <p className="w-12 text-[12px] font-semibold capitalize leading-none">
                 {mode !== "dark" ? "Turn Off the Lights" : "Turn On the Lights"}
               </p>
               {/* Right Arrow */}

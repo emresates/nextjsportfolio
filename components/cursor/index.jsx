@@ -34,6 +34,7 @@ function Cursor() {
           "button",
           "textarea",
           ".link",
+          ".goback",
           {
             target: ".hero",
           },

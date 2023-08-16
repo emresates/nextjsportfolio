@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 
 function MouseScroll() {
@@ -25,15 +25,17 @@ function MouseScroll() {
 
   return (
     <>
-      {isVisible && (
-        <div className="fixed bottom-10 right-10 flex flex-col">
-          <p>Scroll</p>
-          <div className="bottom-10 right-10 flex h-16 w-8 flex-col items-center justify-around rounded-full border-2 border-black">
-            <div className="h-6 w-3 animate-bounce rounded-full border-2 border-black bg-gray-500"></div>
-            <div></div>
-          </div>
+      <div
+        className={`fixed bottom-10 right-10 flex flex-col ${
+          isVisible ? "opacity-100" : "opacity-0"
+        } transition-opacity`}
+      >
+        <p>Scroll</p>
+        <div className="bottom-10 right-10 flex h-14 w-7 flex-col items-center justify-around rounded-full border-2 border-black">
+          <div className="h-5 w-2 animate-bounce rounded-full border-2 border-black bg-gray-500"></div>
+          <div></div>
         </div>
-      )}
+      </div>
     </>
   );
 }

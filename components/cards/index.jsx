@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 function Cards() {
   return (
     <div className="h-full sm:h-[85vh] md:h-[75vh]">
-      <section className="flex items-center justify-center pb-12 text-4xl font-medium uppercase leading-tight tracking-widest md:justify-start md:pl-28">
+      <section className="flex items-center justify-center px-6 pb-12 text-4xl font-medium uppercase leading-tight tracking-widest md:justify-end md:pl-28 xl:px-28">
         what drives me
       </section>
       <section className="relative w-full flex-row items-center justify-center gap-x-8 md:flex xl:gap-x-28">

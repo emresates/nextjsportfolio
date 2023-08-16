@@ -17,7 +17,7 @@ function Socials() {
       variants={fadeIn("left", 0.4)}
       initial="hidden"
       animate="show"
-      exit="hidden"
+      // exit="hidden"
       className="flex items-center gap-x-5 text-3xl"
     >
       <Link
@@ -37,7 +37,7 @@ function Socials() {
       <Link
         href="https://github.com/emresates"
         target="_blank"
-        className="transition-all duration-300 hover:-translate-y-1 hover:text-black"
+        className="transition-all duration-300 hover:-translate-y-1"
       >
         <AiOutlineGithub />
       </Link>
