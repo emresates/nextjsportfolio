@@ -4,6 +4,7 @@ import "./globals.css";
 import { Stick_No_Bills } from "next/font/google";
 import Cursor from "../../components/cursor";
 import Footer from "../../components/footer";
+import OpeningPage from "../../components/openingPage";
 
 const inter = Stick_No_Bills({ subsets: ["latin"] });
 
@@ -19,8 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-white bg-gradient-to-l from-black/50 text-black dark:bg-black dark:from-white/50 dark:text-white`}
+        className={`${inter.className} overflow-x-hidden bg-white bg-gradient-to-l from-black/50 text-black dark:bg-black dark:from-white/50 dark:text-white`}
       >
+        <OpeningPage />
         <Header />
         <Navbar />
         <main>{children}</main>

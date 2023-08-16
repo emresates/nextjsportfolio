@@ -3,18 +3,24 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
+import { motion } from "framer-motion";
 
 //* ICONS
 import { BsLightbulb } from "react-icons/bs";
 import { BsLightbulbOff } from "react-icons/bs";
 import { navData } from "../../data/navData";
+import { fadeIn } from "../../variants";
 
 function Navbar() {
   const [mode, setMode] = useThemeSwitcher("dark");
 
   const pathname = usePathname();
   return (
-    <nav
+    <motion.nav
+      variants={fadeIn("left", 3.2)}
+      initial="hidden"
+      animate="show"
+      exit="hidden"
       className="fixed bottom-0 top-0 z-50 mt-auto flex h-max w-full 
       flex-col items-center gap-y-4 
       xl:right-[2%] xl:h-screen xl:w-16 xl:max-w-md xl:justify-center"
@@ -64,7 +70,7 @@ function Navbar() {
           </div>
         </button>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 

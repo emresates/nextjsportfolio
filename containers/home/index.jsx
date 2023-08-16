@@ -14,7 +14,7 @@ import MouseScroll from "../../components/mouseScroll";
 function HomeContainer() {
   return (
     <div className="overflow-hidden">
-      <div className="mt-28 h-full w-screen overflow-hidden xl:mt-0 xl:flex p-10 xl:pl-28">
+      <div className="mt-28 h-full w-screen overflow-hidden p-10 xl:mt-0 xl:flex xl:pl-28">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -25,7 +25,7 @@ function HomeContainer() {
           <HeroText text="Hi,&nbsp;I'm&nbsp;Emre, Frontend&nbsp;Developer" />
         </motion.div>
         <motion.div
-          variants={fadeIn("left", 0.2)}
+          variants={fadeIn("left", 0.5)}
           initial="hidden"
           animate="show"
           exit="hidden"

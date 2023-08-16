@@ -12,7 +12,7 @@ import Head from "next/head";
 
 export default function Header() {
   return (
-    <header className="xl:h-90 absolute z-30 flex w-full items-center px-16 xl:h-[110px] xl:px-0">      
+    <header className="xl:h-90 absolute z-30 flex w-full items-center px-16 xl:h-[110px] xl:px-0">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/favicon.svg" />
@@ -37,9 +37,15 @@ export default function Header() {
         />
       </Head>
 
-      <div className="container mx-auto flex flex-col items-center justify-between gap-y-6 py-8 lg:flex-row">
+      <motion.div
+        variants={fadeIn("top", 3.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="container mx-auto flex flex-col items-center justify-between gap-y-6 py-8 lg:flex-row"
+      >
         <motion.span
-          variants={fadeIn("right", 0.4)}
+          variants={fadeIn("right", 3.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -50,7 +56,7 @@ export default function Header() {
           </Link>
         </motion.span>
         <motion.span
-          variants={fadeIn("right", 0.4)}
+          variants={fadeIn("right", 3.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -61,7 +67,7 @@ export default function Header() {
           </Link>
         </motion.span>
         <Socials />
-      </div>
+      </motion.div>
     </header>
   );
 }
