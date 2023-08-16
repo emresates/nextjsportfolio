@@ -1,6 +1,5 @@
 import React from "react";
 import HoverImageContainer from "../../../components/imageContainer";
-import Project from "../../../components/3dcard/Project";
 import Link from "next/link";
 
 export const metadata = {
@@ -23,10 +22,7 @@ function ProjectsPage() {
             href="https://github.com/emresates/movieappnext"
             target="_blank"
           >
-            <Project
-              thumb="nextmovies/nextmovies2.png"
-              pid="nextmovies/nextmoviesthumb.png"
-            />
+
           </Link>
         </div>
       </div>

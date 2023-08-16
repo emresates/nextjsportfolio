@@ -14,13 +14,13 @@ import MouseScroll from "../../components/mouseScroll";
 function HomeContainer() {
   return (
     <div className="overflow-hidden">
-      <div className="flex h-screen w-screen overflow-hidden pl-28">
+      <div className="mt-28 h-full w-screen overflow-hidden xl:mt-0 xl:flex p-10 xl:pl-28">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex h-screen w-1/2 items-center justify-center"
+          className="flex h-full w-full items-center justify-center xl:h-screen xl:w-1/2"
         >
           <HeroText text="Hi,&nbsp;I'm&nbsp;Emre, Frontend&nbsp;Developer" />
         </motion.div>
@@ -29,7 +29,7 @@ function HomeContainer() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex h-screen w-2/5 justify-center"
+          className="flex h-full w-full justify-center xl:h-screen xl:w-2/5"
         >
           <Lottie animationData={animationData} />
         </motion.div>

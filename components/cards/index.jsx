@@ -5,21 +5,21 @@ import Tilt from "react-parallax-tilt";
 
 function Cards() {
   return (
-    <div className="h-full sm:h-[85vh] md:h-[75vh]">
+    <div className="h-full xl:h-[75vh]">
       <section className="flex items-center justify-center px-6 pb-12 text-4xl font-medium uppercase leading-tight tracking-widest md:justify-end md:pl-28 xl:px-28">
         what drives me
       </section>
-      <section className="relative w-full flex-row items-center justify-center gap-x-8 md:flex xl:gap-x-28">
+      <section className="relative w-full flex-row flex-wrap items-center justify-center gap-x-12 md:flex xl:gap-x-28">
         <Tilt
           scale={1.05}
           transitionSpeed={1000}
           tiltReverse
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          className="left-[18%] top-0 xl:absolute"
+          className="left-[18%] top-0 mb-10 xl:absolute"
         >
-          <div className="relative m-auto h-96 w-72 rounded-xl bg-gray-700">
-            <div className="absolute -left-8 top-8 flex flex-col uppercase">
+          <div className="relative m-auto h-[22rem] w-[17rem] rounded-xl bg-gray-700 md:h-96 md:w-72">
+            <div className="absolute -top-4 left-2/4 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
               <div className="text-stroke-sm text-xl font-bold tracking-widest">
                 desire to
               </div>
@@ -43,10 +43,10 @@ function Cards() {
           tiltReverse
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          className="top-4 xl:absolute"
+          className="top-4 mb-10 xl:absolute"
         >
-          <div className="relative m-auto h-96 w-72 rounded-xl bg-gray-700">
-            <div className="absolute -left-8 top-8 flex flex-col uppercase">
+          <div className="relative m-auto h-[22rem] w-[17rem] rounded-xl bg-gray-700 md:h-96 md:w-72">
+            <div className="absolute -top-4 left-2/4 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
               <div className="text-stroke-sm text-xl font-bold tracking-widest">
                 desire to
               </div>
@@ -71,10 +71,10 @@ function Cards() {
           tiltReverse
           tiltMaxAngleX={5}
           tiltMaxAngleY={5}
-          className="right-[18%] top-8 xl:absolute"
+          className="right-[18%] top-8 mb-10 xl:absolute"
         >
-          <div className="relative m-auto h-96 w-72 rounded-xl bg-gray-700">
-            <div className="absolute -left-8 top-8 flex flex-col uppercase">
+          <div className="relative m-auto h-[22rem] w-[17rem] rounded-xl bg-gray-700 md:h-96 md:w-72">
+            <div className="absolute -top-4 left-2/4 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
               <div className="text-stroke-sm text-xl font-bold tracking-widest">
                 desire to
               </div>

@@ -12,8 +12,7 @@ import Head from "next/head";
 
 export default function Header() {
   return (
-    <header className="xl:h-90 absolute z-30 flex w-full items-center px-16 xl:h-[110px] xl:px-0">
-      
+    <header className="xl:h-90 absolute z-30 flex w-full items-center px-16 xl:h-[110px] xl:px-0">      
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/favicon.svg" />

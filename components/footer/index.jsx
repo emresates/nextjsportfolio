@@ -12,11 +12,11 @@ const Footer = () => {
           <Easter setEasterEgg={setEasterEgg} setOnce={setOnce} Once={Once} />
         )}
       </AnimatePresence>
-      <div className="flex items-center justify-center p-20  pb-2 pt-4 md:justify-between">
+      <div className="mb-20 flex items-center justify-center px-6 xl:px-20 pb-2 pt-4 md:justify-between xl:mb-0">
         <div className="hidden items-center md:flex">
           <div className="rotate-180 transform"></div>
           <p
-            className="text-sm font-medium uppercase leading-snug tracking-widest text-gray-100"
+            className="footer text-sm font-medium uppercase leading-snug tracking-widest text-gray-100"
             onClick={() =>
               window.scrollTo({
                 top: 0,

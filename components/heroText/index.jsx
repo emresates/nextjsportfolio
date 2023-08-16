@@ -7,7 +7,7 @@ function HeroText({ text }) {
     .map((letter, index) => <TextSpan key={index}>{letter}</TextSpan>);
   return (
     <>
-      <div className="break-words">
+      <div className="hidden break-words xl:block">
         {letterSpans.slice(0, 3)}
         {letterSpans[3]}
         <br />
@@ -15,6 +15,9 @@ function HeroText({ text }) {
         <br />
         {letterSpans.slice(14)}
       </div>
+      <p className="xl:hidden select-none break-words text-center text-4xl md:text-8xl">
+        Hi,&nbsp;I'm&nbsp;Emre, Frontend&nbsp;Developer
+      </p>
     </>
   );
 }

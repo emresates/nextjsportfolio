@@ -9,19 +9,35 @@ function Cursor() {
   return (
     <>
       <AnimatedCursor
+        // color="255, 255, 255"
+        // innerSize={20}
+        // outerSize={22}
+        // innerScale={2.4}
+        // outerScale={2.6}
+        // outerAlpha={1}
+        // innerStyle={{
+        //   backgroundColor: "white",
+        //   mixBlendMode: "difference",
+        // }}
+        // outerStyle={{
+        //   mixBlendMode: "difference",
+        // }}
+
         color="255, 255, 255"
-        innerSize={20}
-        outerSize={22}
-        innerScale={2.4}
-        outerScale={2.6}
-        outerAlpha={1}
+        innerSize={8}
+        outerSize={35}
+        innerScale={2}
+        outerScale={1.8}
+        outerAlpha={0}
         innerStyle={{
-          backgroundColor: "white",
           mixBlendMode: "difference",
         }}
         outerStyle={{
           mixBlendMode: "difference",
+          border:"3px solid white",
+          backgroundColor:"transparent"
         }}
+        hasBlendMode={true}
         clickables={[
           "a",
           'input[type="text"]',
@@ -35,6 +51,7 @@ function Cursor() {
           "textarea",
           ".link",
           ".goback",
+          ".footer",
           {
             target: ".hero",
           },

@@ -28,7 +28,7 @@ function TextSpan({ children }) {
         }
       }}
       onAnimationComplete={() => setIsPlaying(false)}
-      className="hero inline-block select-none text-8xl transition-all hover:text-red-500"
+      className="hero inline-block select-none text-5xl md:text-8xl transition-all hover:text-red-500"
     >
       {children}
     </motion.span>
