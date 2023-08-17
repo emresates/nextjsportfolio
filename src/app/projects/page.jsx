@@ -19,10 +19,11 @@ function ProjectsPage() {
         </div>
         <div className="relative h-[400px] w-2/5 overflow-hidden">
           <Link
-            href="https://github.com/emresates/movieappnext"
+            // href="https://github.com/emresates/movieappnext"
+            href="https://www.linkedin.com/in/emresates/"
             target="_blank"
           >
-
+            ON PROCESS!!! To see my projects, you can check my linkedin account. 
           </Link>
         </div>
       </div>

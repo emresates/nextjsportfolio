@@ -37,15 +37,9 @@ export default function Header() {
         />
       </Head>
 
-      <motion.div
-        variants={fadeIn("top", 3.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="container mx-auto flex flex-col items-center justify-between gap-y-6 py-8 lg:flex-row"
-      >
+      <div className="container mx-auto flex flex-col items-center justify-between gap-y-6 py-8 lg:flex-row">
         <motion.span
-          variants={fadeIn("right", 3.6)}
+          variants={fadeIn("right", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -60,7 +54,7 @@ export default function Header() {
           </Link>
         </motion.span>
         <motion.span
-          variants={fadeIn("right", 3.6)}
+          variants={fadeIn("right", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -75,7 +69,7 @@ export default function Header() {
           </Link>
         </motion.span>
         <Socials />
-      </motion.div>
+      </div>
     </header>
   );
 }

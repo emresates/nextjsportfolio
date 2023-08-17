@@ -4,7 +4,6 @@ import "./globals.css";
 import { Stick_No_Bills } from "next/font/google";
 import Cursor from "../../components/cursor";
 import Footer from "../../components/footer";
-import OpeningPage from "../../components/openingPage";
 
 const inter = Stick_No_Bills({ subsets: ["latin"] });
 

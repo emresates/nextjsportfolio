@@ -17,7 +17,7 @@ function Navbar() {
   const pathname = usePathname();
   return (
     <motion.nav
-      variants={fadeIn("left", 3.2)}
+      variants={fadeIn("left", 0.4)}
       initial="hidden"
       animate="show"
       exit="hidden"

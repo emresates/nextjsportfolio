@@ -14,7 +14,7 @@ import { BiLogoPinterestAlt } from "react-icons/bi";
 function Socials() {
   return (
     <motion.div
-      variants={fadeIn("left", 0.4)}
+      variants={fadeIn("left", 0.6)}
       initial="hidden"
       animate="show"
       // exit="hidden"
