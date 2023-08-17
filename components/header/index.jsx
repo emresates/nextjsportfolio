@@ -51,7 +51,7 @@ export default function Header() {
           exit="hidden"
           className="inline-block dark:hidden xl:pl-16"
         >
-          <Link href={"/"}>
+          <Link href={"/"} name="emre ates">
             <Image width={50} height={48} alt="" priority={true} src={Logo4} />
           </Link>
         </motion.span>
@@ -62,7 +62,7 @@ export default function Header() {
           exit="hidden"
           className="hidden dark:inline-block xl:pl-16"
         >
-          <Link href={"/"}>
+          <Link href={"/"} name="emre ates">
             <Image width={50} height={48} alt="" priority={true} src={Logo5} />
           </Link>
         </motion.span>

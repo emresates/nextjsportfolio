@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
@@ -19,16 +20,20 @@ function Cards() {
           className="left-[18%] top-0 mb-10 xl:absolute"
         >
           <div className="relative m-auto h-[22rem] w-[17rem] rounded-xl bg-gray-700 md:h-96 md:w-72">
-            <div className="absolute -top-4 left-2/4 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
+            <div className="absolute -top-4 left-2/4 z-10 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
               <div className="text-stroke-sm text-xl font-bold tracking-widest">
                 desire to
               </div>
               <div className="text-4xl font-bold tracking-wider">Innovate</div>
             </div>
-            <img
-              className="h-full w-full rounded-xl object-cover object-center"
+            <Image
+              className="rounded-xl object-cover object-center"
               src="./gifs/gif1.webp"
               alt="innovation"
+              unoptimized
+              fill
+              quality={90}
+              loading="lazy"
             />
           </div>
           <div className="mx-auto my-4 w-64 text-center text-xl">
@@ -46,16 +51,20 @@ function Cards() {
           className="top-4 mb-10 xl:absolute"
         >
           <div className="relative m-auto h-[22rem] w-[17rem] rounded-xl bg-gray-700 md:h-96 md:w-72">
-            <div className="absolute -top-4 left-2/4 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
+            <div className="absolute -top-4 left-2/4 z-10 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
               <div className="text-stroke-sm text-xl font-bold tracking-widest">
                 desire to
               </div>
               <div className="text-4xl font-bold tracking-wider">learn</div>
             </div>
-            <img
-              className="h-full w-full rounded-xl object-cover object-center"
+            <Image
+              className="rounded-xl object-cover object-center"
               src="./gifs/gif2.webp"
               alt="learn"
+              unoptimized
+              fill
+              quality={90}
+              loading="lazy"
             />
           </div>
           <div className="mx-auto my-4 w-64 text-center text-xl">
@@ -74,16 +83,20 @@ function Cards() {
           className="right-[18%] top-8 mb-10 xl:absolute"
         >
           <div className="relative m-auto h-[22rem] w-[17rem] rounded-xl bg-gray-700 md:h-96 md:w-72">
-            <div className="absolute -top-4 left-2/4 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
+            <div className="absolute -top-4 left-2/4 z-10 flex -translate-x-1/2 flex-col text-center uppercase md:-left-8 md:top-8 md:translate-x-0 md:text-left">
               <div className="text-stroke-sm text-xl font-bold tracking-widest">
                 desire to
               </div>
               <div className="text-4xl font-bold tracking-wider">support</div>
             </div>
-            <img
-              className="h-full w-full rounded-xl object-cover object-center"
+            <Image
+              className="rounded-xl object-cover object-center"
               src="./gifs/gif3.webp"
               alt="support"
+              unoptimized
+              fill
+              quality={90}
+              loading="lazy"
             />
           </div>
           <div className="mx-auto my-4 w-64 text-center text-xl">
