@@ -27,7 +27,7 @@ function Cards() {
             </div>
             <img
               className="h-full w-full rounded-xl object-cover object-center"
-              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHk3aHYybnR2cW41YTU2dmlpZWk1anRmaXo5bnh2c2VsczBnbXZweCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xFRjbfNzmTOdXy/giphy.gif"
+              src="./gifs/gif1.webp"
               alt="innovation"
             />
           </div>
@@ -54,7 +54,7 @@ function Cards() {
             </div>
             <img
               className="h-full w-full rounded-xl object-cover object-center"
-              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FvMDhzNHFkdG80eWhxZHV1NnB0amFlcXMydGo1dDVuNm15cWQ1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7SKOwf1nD6j6XhfLMG/giphy.gif"
+              src="./gifs/gif2.webp"
               alt="learn"
             />
           </div>
@@ -82,7 +82,7 @@ function Cards() {
             </div>
             <img
               className="h-full w-full rounded-xl object-cover object-center"
-              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHNoanhwbG1oeG1vY2VzNzBhYXI5Mng3NjVyZG9xdzZodDNiYXkwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YRzQnWzbn4WIxd3ZYx/giphy.gif"
+              src="./gifs/gif3.webp"
               alt="support"
             />
           </div>

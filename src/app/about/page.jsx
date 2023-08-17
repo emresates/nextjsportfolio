@@ -3,6 +3,7 @@ import React from "react";
 import MySkillSet from "../../../components/mySkillSet";
 import AboutInfo from "../../../components/aboutInfo";
 import MouseScroll from "../../../components/mouseScroll";
+import ExperienceLine from "../../../components/experienceLine";
 
 export const metadata = {
   title: "About | Emre Ates",
@@ -17,6 +18,7 @@ function AboutPage() {
     <div className="mb-24 select-none overflow-x-hidden xl:mb-0">
       <AboutInfo />
       <MySkillSet />
+      <ExperienceLine />
       <MouseScroll />
     </div>
   );
