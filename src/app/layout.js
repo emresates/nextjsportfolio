@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} overflow-x-hidden bg-white bg-gradient-to-l from-black/50 text-black dark:bg-black dark:from-white/50 dark:text-white`}
       >
-        <OpeningPage />
+        {/* <OpeningPage /> */}
         <Header />
         <Navbar />
         <main>{children}</main>
