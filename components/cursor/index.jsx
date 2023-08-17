@@ -34,8 +34,8 @@ function Cursor() {
         }}
         outerStyle={{
           mixBlendMode: "difference",
-          border:"3px solid white",
-          backgroundColor:"transparent"
+          border: "3px solid white",
+          backgroundColor: "transparent",
         }}
         hasBlendMode={true}
         clickables={[
@@ -52,9 +52,7 @@ function Cursor() {
           ".link",
           ".goback",
           ".footer",
-          {
-            target: ".hero",
-          },
+          ".hero",
         ]}
       />
     </>

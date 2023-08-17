@@ -30,7 +30,14 @@ function MySkillSet() {
               viewport={{ once: true }}
               className="relative h-12 w-12 sm:h-20 sm:w-20"
             >
-              <Image unoptimized alt={card.title} src={card.image} fill />
+              <Image
+                unoptimized
+                alt={card.title}
+                src={card.image}
+                fill
+                quality={80}
+                loading="lazy"
+              />
             </motion.div>
           ))}
         </div>

@@ -33,7 +33,7 @@ export default function Header() {
         <meta property="og:image" content="/thumbnail.png" />
         <meta
           name="keywords"
-          content="PortFolio, about me, about emreates,emreates, emre ates"
+          content="PortFolio, about me, about emreates,emreates, emre ates, secenory"
         />
       </Head>
 
