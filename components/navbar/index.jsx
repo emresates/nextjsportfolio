@@ -38,7 +38,8 @@ function Navbar() {
               } group relative flex items-center transition-all duration-300 hover:text-red-500`}
               key={index}
               href={link.path}
-              name={link.path}
+              id={link.path}
+              aria-label={link.path}
             >
               {/* Tooltip */}
               <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
@@ -58,7 +59,8 @@ function Navbar() {
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className="light group relative flex items-center transition-all duration-300"
-          name="theme switch"
+          id="theme switch button"
+          aria-label="theme switch button"
         >
           {mode === "dark" ? <BsLightbulbOff /> : <BsLightbulb />}
           <div className="absolute right-0 hidden pr-14 xl:group-hover:flex">
