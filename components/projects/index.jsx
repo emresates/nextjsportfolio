@@ -102,7 +102,7 @@ export default function Projects() {
               href="https://www.linkedin.com/in/emresates/"
               target="_blank"
               id="linkedin"
-              className="text-stroke tracking-widest"
+              className="social text-stroke tracking-widest"
             >
               {" "}
               LinkedIn{" "}
@@ -112,7 +112,7 @@ export default function Projects() {
               href="https://github.com/emresates"
               target="_blank"
               id="github"
-              className="text-stroke tracking-widest"
+              className="social text-stroke tracking-widest"
             >
               {" "}
               Github{" "}

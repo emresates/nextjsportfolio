@@ -9,20 +9,6 @@ function Cursor() {
   return (
     <>
       <AnimatedCursor
-        // color="255, 255, 255"
-        // innerSize={20}
-        // outerSize={22}
-        // innerScale={2.4}
-        // outerScale={2.6}
-        // outerAlpha={1}
-        // innerStyle={{
-        //   backgroundColor: "white",
-        //   mixBlendMode: "difference",
-        // }}
-        // outerStyle={{
-        //   mixBlendMode: "difference",
-        // }}
-
         color="255, 255, 255"
         innerSize={8}
         outerSize={35}
@@ -53,6 +39,7 @@ function Cursor() {
           ".goback",
           ".footer",
           ".hero",
+          ".social",
         ]}
       />
     </>
