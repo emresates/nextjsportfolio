@@ -9,9 +9,9 @@ function HireMe() {
     <div className="relative flex flex-col items-center justify-between px-10 py-20 antialiased lg:flex-row">
       <div className="relative w-full md:w-2/5">
         <div>
-          <div className="CardHolder flex items-center justify-center">
-            <DigitalCard />
-            <div className="relative hidden h-44 w-44 overflow-hidden rounded-2xl dark:block sm:h-96 sm:w-96">
+          <div className="flex items-center justify-center">
+            <div className="CardHolder relative hidden h-44 w-44 rounded-2xl dark:block sm:h-96 sm:w-96">
+              <DigitalCard />
               <Image
                 className="rounded-2xl"
                 src="./qrcard.png"
@@ -22,7 +22,7 @@ function HireMe() {
                 loading="lazy"
               />
             </div>
-            <div className="relative block h-96 w-96 overflow-hidden rounded-2xl dark:hidden">
+            <div className="CardHolder relative block h-96 w-96 rounded-2xl dark:hidden">
               <Image
                 className="rounded-2xl"
                 src="./qrcarddark.png"
