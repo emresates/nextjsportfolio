@@ -10,6 +10,7 @@ import { fadeIn } from "../../variants";
 import MarqueeRow from "../../components/marqueeRow";
 import Cards from "../../components/cards";
 import MouseScroll from "../../components/mouseScroll";
+import HireMe from "../../components/hireMe";
 
 function HomeContainer() {
   return (
@@ -36,6 +37,7 @@ function HomeContainer() {
       </div>
       <MarqueeRow />
       <Cards />
+      <HireMe />
       <MouseScroll />
     </div>
   );

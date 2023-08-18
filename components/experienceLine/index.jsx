@@ -48,7 +48,7 @@ function ExperienceLine() {
   return (
     <div className="my-10 px-6 xl:px-28">
       <h1 className="flex items-center justify-center pb-12 text-4xl font-medium uppercase leading-tight tracking-widest md:justify-start">
-        Work Experience
+        Experience
       </h1>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
