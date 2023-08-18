@@ -61,7 +61,7 @@ function ContactForm() {
   return (
     <div className="bg-primary/30 h-full overflow-hidden">
       <div className="h-full xl:flex xl:text-left">
-        <div className="flex h-screen w-screen flex-col items-center justify-center p-8 xl:w-2/3 xl:pl-28">
+        <div className="flex h-screen w-screen flex-col items-center justify-center px-8 pt-20 xl:w-2/3 xl:pl-28">
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"

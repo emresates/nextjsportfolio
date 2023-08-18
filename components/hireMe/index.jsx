@@ -13,7 +13,6 @@ function HireMe() {
             <div className="CardHolder relative hidden h-44 w-44 rounded-2xl dark:block sm:h-96 sm:w-96">
               <DigitalCard />
               <Image
-                className="rounded-2xl"
                 src="./qrcard.png"
                 alt="Qr Code"
                 unoptimized
@@ -22,9 +21,9 @@ function HireMe() {
                 loading="lazy"
               />
             </div>
-            <div className="CardHolder relative block h-96 w-96 rounded-2xl dark:hidden">
+            <div className="CardHolder relative block h-44 w-44 rounded-2xl dark:hidden sm:h-96 sm:w-96">
+              <DigitalCard />
               <Image
-                className="rounded-2xl"
                 src="./qrcarddark.png"
                 alt="Qr Code"
                 unoptimized
