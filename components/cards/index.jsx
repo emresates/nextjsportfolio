@@ -59,7 +59,7 @@ function Cards() {
             </div>
             <Image
               className="rounded-xl object-cover object-center"
-              src="./gifs/gif2.webp"
+              src="./gifs/gif2.gif"
               alt="learn"
               unoptimized
               fill
@@ -91,7 +91,7 @@ function Cards() {
             </div>
             <Image
               className="rounded-xl object-cover object-center"
-              src="./gifs/gif3.webp"
+              src="./gifs/gif3.gif"
               alt="support"
               unoptimized
               fill
