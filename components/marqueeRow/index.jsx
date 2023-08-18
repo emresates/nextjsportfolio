@@ -7,7 +7,7 @@ function MarqueeRow() {
       <h1 className="flex items-center justify-center pb-12 text-4xl font-medium uppercase leading-tight tracking-widest md:justify-start">
         Recents
       </h1>
-      <Marquee>
+      <Marquee pauseOnHover>
         <div className="text-stroke overflow-hidden text-4xl font-bold uppercase tracking-widest md:text-6xl">
           <a
             href="https://www.linkedin.com/feed/update/urn:li:activity:7090704166355939328/"
@@ -25,7 +25,7 @@ function MarqueeRow() {
           </a>
         </div>
       </Marquee>
-      <Marquee direction="right">
+      <Marquee direction="right" pauseOnHover>
         <div className="h-full overflow-hidden px-20 text-4xl font-bold uppercase tracking-widest md:text-6xl">
           <a
             href="https://www.linkedin.com/posts/emresates_mongodb-postgresql-nodejs-activity-7013172288338464768-Fl1b?utm_source=share&utm_medium=member_desktop"
