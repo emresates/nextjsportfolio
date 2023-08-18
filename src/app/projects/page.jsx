@@ -1,6 +1,6 @@
 import React from "react";
-import HoverImageContainer from "../../../components/imageContainer";
-import Link from "next/link";
+import MouseScroll from "../../../components/mouseScroll";
+import Projects from "../../../components/projects";
 
 export const metadata = {
   title: "Projects | Emre Ates",
@@ -12,40 +12,10 @@ export const metadata = {
 
 function ProjectsPage() {
   return (
-    <div className="mx-auto w-[84%] pt-28">
-      <div className="mb-6 flex gap-6">
-        <div className="flex h-[400px] w-3/5 items-center justify-center">
-          <p className="text-5xl uppercase">prominent projects</p>
-        </div>
-        <div className="relative h-[400px] w-2/5 overflow-hidden">
-          <Link
-            // href="https://github.com/emresates/movieappnext"
-            href="https://www.linkedin.com/in/emresates/"
-            target="_blank"
-          >
-            ON PROCESS!!! To see my projects, you can check my linkedin account. 
-          </Link>
-        </div>
-      </div>
-      <div className="mb-6 flex flex-row-reverse gap-6 ">
-        <div className="relative h-[400px] w-3/5">
-          <HoverImageContainer
-            imgLeft="./projects/trippy/agency1.png"
-            imgCenter="./projects/trippy/agency2.png"
-            imgRight="./projects/trippy/agency3.png"
-            imgThumb="./projects/trippy/agencythumb.png"
-          />
-        </div>
-        <div className="relative h-[400px] w-2/5">
-          <HoverImageContainer
-            imgCenter="./projects/photo/pho2.png"
-            imgLeft="./projects/photo/phto.png"
-            imgRight="./projects/photo/pho1.png"
-            imgThumb="./projects/photo/pho1.png"
-          />
-        </div>
-      </div>
-    </div>
+    <>
+      <Projects />
+      <MouseScroll />
+    </>
   );
 }
 
