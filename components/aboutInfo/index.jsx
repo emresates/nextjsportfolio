@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-// import AtomObject from "../../objects/AtomObject";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -18,7 +17,7 @@ function AboutInfo() {
           className="mt:32 w-full px-4 py-40 sm:px-20 xl:mt-0 xl:w-3/5 xl:pl-32 "
         >
           <div className="mt-20 xl:mt-0">
-            <p className="text-2xl">Introduction</p>
+            <p className="text-3xl">Introduction</p>
             <h2 className="text-stroke text-5xl text-red-500 xl:text-9xl">
               About Me
             </h2>
@@ -36,9 +35,6 @@ function AboutInfo() {
             <br />
           </p>
         </motion.div>
-        {/* <div className="hidden h-full items-center justify-center xl:flex xl:w-2/5">
-          <AtomObject />
-        </div> */}
       </div>
     </>
   );
