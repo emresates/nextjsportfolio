@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import AtomObject from "../../objects/AtomObject";
+// import AtomObject from "../../objects/AtomObject";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -15,11 +15,11 @@ function AboutInfo() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="mt:32 w-full px-4 py-40 sm:px-20 xl:mt-0 xl:w-2/5 xl:pl-32"
+          className="mt:32 w-full px-4 py-40 sm:px-20 xl:mt-0 xl:w-3/5 xl:pl-32 "
         >
           <div className="mt-20 xl:mt-0">
             <p className="text-2xl">Introduction</p>
-            <h2 className="text-stroke text-5xl  text-red-500 xl:text-9xl">
+            <h2 className="text-stroke text-5xl text-red-500 xl:text-9xl">
               About Me
             </h2>
           </div>
@@ -29,7 +29,6 @@ function AboutInfo() {
             all browsers. I deeply care about building interfaces that are
             usable and pleasant for the user.
             <br />
-            <br />
             What sets me apart is my unwavering commitment to excellence and the
             desire to expand my skillset beyond frontend development. I am keen
             on exploring new horizons in the realm of full-stack development,
@@ -37,9 +36,9 @@ function AboutInfo() {
             <br />
           </p>
         </motion.div>
-        <div className="hidden h-full items-center justify-center xl:flex xl:w-2/5">
+        {/* <div className="hidden h-full items-center justify-center xl:flex xl:w-2/5">
           <AtomObject />
-        </div>
+        </div> */}
       </div>
     </>
   );
