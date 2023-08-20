@@ -16,14 +16,14 @@ export default function Projects() {
         </div>
         <div className="relative h-[200px] w-full overflow-hidden sm:h-[300px] md:h-[500px] xl:w-2/5">
           <Link
-            href="https://github.com/emresates/movieappnext"
+            href="https://movieappnext.vercel.app"
             target="_blank"
             id="movie-app"
           >
             <HoverImageContainer
-              imgLeft="./projects/nextmovies/nextmovies2.webp"
-              imgCenter="./projects/nextmovies/nextmovies4.webp"
-              imgRight="./projects/nextmovies/nextmovies5.webp"
+              imgLeft="./projects/nextmovies/movies1.webp"
+              imgCenter="./projects/nextmovies/movies2.webp"
+              imgRight="./projects/nextmovies/movies3.webp"
               imgThumb="./projects/nextmovies/nextmoviesthumb.webp"
             />
           </Link>
@@ -32,7 +32,7 @@ export default function Projects() {
       <div className="mb-6 flex-row-reverse gap-6 xl:flex ">
         <div className="relative mb-6 h-[200px] w-full sm:h-[300px] md:h-[500px] xl:mb-0 xl:w-3/5">
           <Link
-            href="https://github.com/emresates/React-travel-agency-project"
+            href="https://travelwithtrippy.vercel.app"
             target="_blank"
             id="travel-agency"
           >
@@ -46,7 +46,7 @@ export default function Projects() {
         </div>
         <div className="relative h-[200px] w-full sm:h-[300px] md:h-[500px] xl:w-2/5">
           <Link
-            href="https://github.com/emresates/React-Photo-Studio"
+            href="https://corestudio.netlify.app"
             target="_blank"
             id="photo-studio"
           >
@@ -62,7 +62,7 @@ export default function Projects() {
       <div className="mb-6 gap-6 xl:flex ">
         <div className="relative mb-6 h-[200px] w-full sm:h-[300px] md:h-[500px] xl:mb-0 xl:w-3/5">
           <Link
-            href="https://github.com/emresates/React-Music-app"
+            href="https://secenory-music.netlify.app"
             target="_blank"
             id="music-app"
           >
@@ -76,7 +76,7 @@ export default function Projects() {
         </div>
         <div className="relative h-[200px] w-full sm:h-[300px] md:h-[500px] xl:w-2/5">
           <Link
-            href="https://github.com/emresates/React-Photo-Studio"
+            href="https://emrescoffee-shop.netlify.app"
             target="_blank"
             id="photo-studio"
           >
@@ -93,8 +93,8 @@ export default function Projects() {
         <div className="mb-6 flex h-[200px] w-full flex-col items-center justify-center px-4 text-center tracking-widest sm:h-[300px] md:h-[500px] xl:mb-0 xl:w-3/5 xl:px-40">
           <p className="mt-2 text-2xl uppercase md:text-4xl">
             You can click on the photos
-            <span className="text-stroke"> for more </span>
-            details.
+            <span className="text-stroke"> to explore </span>
+            the websites in more detail.
           </p>
           <p className="mt-10 text-xl uppercase md:text-2xl">
             To view project details, you can visit my
@@ -122,7 +122,7 @@ export default function Projects() {
         </div>
         <div className="relative h-[200px] w-full sm:h-[300px] md:h-[500px] xl:w-2/5">
           <Link
-            href="https://github.com/emresates"
+            href="https://reindeer-home.netlify.app"
             target="_blank"
             id="github-profile"
           >
