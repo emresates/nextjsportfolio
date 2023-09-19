@@ -32,7 +32,8 @@ function MySkillSet() {
             >
               <Image
                 unoptimized
-                alt={card.title}
+                alt={"secenory skill" + card.title}
+                aria-label={"secenory skill" + card.title}
                 src={card.image}
                 fill
                 quality={80}

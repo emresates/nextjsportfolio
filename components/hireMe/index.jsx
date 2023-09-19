@@ -14,7 +14,7 @@ function HireMe() {
               <DigitalCard />
               <Image
                 src="./qrcard.png"
-                alt="Qr Code"
+                alt="Secenory Qr Code"
                 unoptimized
                 fill
                 quality={90}
@@ -25,7 +25,7 @@ function HireMe() {
               <DigitalCard />
               <Image
                 src="./qrcarddark.png"
-                alt="Qr Code"
+                alt="Secenory Qr Code"
                 unoptimized
                 fill
                 quality={90}

@@ -24,7 +24,7 @@ function Socials() {
         href="https://www.instagram.com/secenory/"
         target="_blank"
         className="transition-all duration-300 hover:-translate-y-1 hover:text-pink-700"
-        id="social account instagram"
+        id="social account instagram secenory"
         aria-label="social account instagram"
       >
         <AiOutlineInstagram />
@@ -33,7 +33,7 @@ function Socials() {
         href="https://www.linkedin.com/in/emresates/"
         target="_blank"
         className="transition-all duration-300 hover:-translate-y-1 hover:text-blue-500"
-        id="social account linkedin"
+        id="social account linkedin secenory"
         aria-label="social account linkedin"
       >
         <AiOutlineLinkedin />
@@ -42,7 +42,7 @@ function Socials() {
         href="https://github.com/emresates"
         target="_blank"
         className="transition-all duration-300 hover:-translate-y-1"
-        id="social account github"
+        id="social account github secenory"
         aria-label="social account github"
       >
         <AiOutlineGithub />
@@ -51,7 +51,7 @@ function Socials() {
         href="https://tr.pinterest.com/Secenory2/"
         target="_blank"
         className="transition-all duration-300 hover:-translate-y-1 hover:text-red-600"
-        id="social account pinterest"
+        id="social account pinterest secenory"
         aria-label="social account pinterest"
       >
         <BiLogoPinterestAlt />

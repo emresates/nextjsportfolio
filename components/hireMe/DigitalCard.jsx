@@ -36,7 +36,7 @@ function DigitalCard() {
             className="DigitalCard_face DigitalCard_back grid h-full w-full place-content-center"
           >
             <div className="absolute top-4 w-full">
-              <p className="text-center text-2xl font-bold  uppercase">
+              <p className="text-center text-2xl font-bold uppercase">
                 Emre Ates
               </p>
               <p className="text-center text-sm font-medium uppercase leading-snug tracking-widest">
