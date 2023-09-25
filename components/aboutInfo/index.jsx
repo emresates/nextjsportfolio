@@ -23,9 +23,9 @@ function AboutInfo() {
             </h2>
           </div>
           <p className="text-xl tracking-wider">
-            I’m Emre aka “Secenory”, a frontend developer, proficient in both
-            English and Turkish, experienced in writing efficient React apps on
-            all browsers. I deeply care about building interfaces that are
+            I’m Emre aka “Secenory”, a frontend developer, proficient in English
+            and native in Turkish, experienced in writing efficient React apps
+            on all browsers. I deeply care about building interfaces that are
             usable and pleasant for the user.
             <br />
             What sets me apart is my unwavering commitment to excellence and the
