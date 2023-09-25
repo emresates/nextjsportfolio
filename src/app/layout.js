@@ -19,7 +19,7 @@ export const metadata = {
     url: "https://secenory.live/",
     siteName: "Secenory Portfolio",
     type: "website",
-    authors: ["Emre Ates"],
+    authors: ["Secenory"],
   },
   robots: {
     index: true,
