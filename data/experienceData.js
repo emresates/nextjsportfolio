@@ -1,5 +1,13 @@
 export const experienceData = [
   {
+    icon: "./experience/karga.svg",
+    iconbg: "white",
+    company: "Karga Karga",
+    title: "Frontend Developer",
+    date: "Oct 2023 - Present",
+    points: ["Developing and maintaining web applications using Nextjs."],
+  },
+  {
     icon: "./experience/comp1.png",
     iconbg: "white",
     company: "Trailblu",
