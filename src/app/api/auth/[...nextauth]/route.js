@@ -31,7 +31,7 @@ const handler = NextAuth({
     }),
   ],
   pages: {
-    error: "/login",
+    error: "/admin",
   },
   session: {
     maxAge: 30 * 24 * 60 * 60, // 30 Days
