@@ -7,8 +7,9 @@ const Dashboard = () => {
   const { status } = useSession();
   const router = useRouter();
 
+  console.log("status admin", status);
   useEffect(() => {
-    if (status !== "authenticated") {
+    if (status === "unauthenticated") {
       router.push("/admin");
     }
   }, []);
