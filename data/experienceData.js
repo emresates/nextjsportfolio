@@ -5,7 +5,15 @@ export const experienceData = [
     company: "Karga Karga",
     title: "Frontend Developer",
     date: "Oct 2023 - Present",
-    points: ["Developing and maintaining web applications using Nextjs."],
+    points: [
+      "Developing and maintaining web applications and pages using Next.js and React.",
+      "Ensuring that incoming designs are created to be cross-browser compatible and responsive in nature.",
+      "Collaborated with backend developers to integrate frontend and backend systems.",
+      "Employing techniques such as code minification, image optimization and lazy loading to enhance website performance.",
+      "Leveraging version control systems like Git for code change management, issue tracking, and seamless collaboration",
+      "Incorporating APIs into web applications to retrieve data from external sources or enable specific functionalities.",
+      "Guaranteeing flawless integration of frontend and backend components while aligning with project requirements and objectives through close collaboration with designers, backend developers, and other team members.",
+    ],
   },
   {
     icon: "./experience/comp1.png",
