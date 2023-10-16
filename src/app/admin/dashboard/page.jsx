@@ -15,7 +15,7 @@ const Dashboard = () => {
   }, []);
   console.log(status);
 
-  return <div>Admin</div>;
+  return <div className="h-screen w-full">Admin</div>;
 };
 
 export default Dashboard;
