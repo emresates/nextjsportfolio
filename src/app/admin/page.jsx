@@ -9,11 +9,12 @@ const Admin = () => {
   const { status } = useSession();
   const router = useRouter();
 
-  useEffect(() => {
-    if (status === "authenticated") {
-      router.push("/admin/dashboard");
-    }
-  }, []);
+  if (status === "loading") {
+    return <div>Loading...</div>;
+  }
+  if (status === "authenticated") {
+    router.push("/admin/dashboard");
+  }
 
   const loginSubmit = (e) => {
     e.preventDefault();
@@ -21,8 +22,8 @@ const Admin = () => {
     signIn("credentials", {
       username: formData.username,
       password: formData.password,
-      redirect: true,
-      callbackUrl: "/admin/dashboard",
+      // redirect: true,
+      // callbackUrl: "/admin/dashboard",
     });
   };
 

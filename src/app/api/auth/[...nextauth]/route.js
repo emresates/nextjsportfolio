@@ -8,7 +8,7 @@ const handler = NextAuth({
   providers: [
     CredentialsProvider({
       id: "credentials",
-      name: "Credentials",
+      name: "credentials",
       async authorize(credentials) {
         await connectMongoDB();
 
@@ -30,24 +30,6 @@ const handler = NextAuth({
       },
     }),
   ],
-  pages: {
-    error: "/admin",
-  },
-  session: {
-    maxAge: 30 * 24 * 60 * 60, // 30 Days
-  },
-  callbacks: {
-    async session({ session, token }) {
-      session.user = token.user;
-      return session;
-    },
-    async jwt({ token, user }) {
-      if (user) {
-        token.user = user;
-      }
-      return token;
-    },
-  },
 });
 
 export { handler as GET, handler as POST };
