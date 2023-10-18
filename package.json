@@ -12,12 +12,9 @@
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "autoprefixer": "10.4.14",
-    "bcryptjs": "^2.4.3",
     "framer-motion": "^10.15.1",
     "lottie-react": "^2.4.0",
-    "mongoose": "^7.6.2",
     "next": "13.4.13",
-    "next-auth": "^4.23.2",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-animated-cursor": "^2.8.1",

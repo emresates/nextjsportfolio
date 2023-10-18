@@ -4,7 +4,6 @@ import "./globals.css";
 import { Stick_No_Bills } from "next/font/google";
 import Cursor from "../../components/cursor";
 import Footer from "../../components/footer";
-import AuthProvider from "../../components/AuthProvider/AuthProvider";
 
 const inter = Stick_No_Bills({ subsets: ["latin"] });
 
@@ -62,13 +61,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} overflow-x-hidden bg-white bg-gradient-to-l from-black/50 text-black dark:bg-black dark:from-white/50 dark:text-white`}
       >
-        <AuthProvider>
-          <Header />
-          <Navbar />
-          <main>{children}</main>
-          <Cursor />
-          <Footer />
-        </AuthProvider>
+        <Header />
+        <Navbar />
+        <main>{children}</main>
+        <Cursor />
+        <Footer />
       </body>
     </html>
   );
