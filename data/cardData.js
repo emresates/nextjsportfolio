@@ -1,15 +1,23 @@
 export const cardData = [
   {
-    title: "Reactjs",
-    image: "./skills/react.png",
-  },
-  {
     title: "Nextjs",
     image: "./skills/next.png",
   },
   {
+    title: "Reactjs",
+    image: "./skills/react.png",
+  },
+  {
     title: "Javascript",
     image: "./skills/js.png",
+  },
+  {
+    title: "Typescript",
+    image: "./skills/ts.png",
+  },
+  {
+    title: "Redux",
+    image: "./skills/redux.png",
   },
   {
     title: "Html",
@@ -39,28 +47,24 @@ export const cardData = [
     title: "Material Ui",
     image: "./skills/mui.png",
   },
-  {
-    title: "Jquery",
-    image: "./skills/jquery.png",
-  },
-  {
-    title: "Redux",
-    image: "./skills/redux.png",
-  },
-  {
-    title: "Graphql",
-    image: "./skills/graphql.png",
-  },
-  {
-    title: "Nodejs",
-    image: "./skills/node.png",
-  },
-  {
-    title: "MongoDB",
-    image: "./skills/mongo.png",
-  },
-  {
-    title: "PostgreSQL",
-    image: "./skills/postgre.png",
-  },
+  // {
+  //   title: "Jquery",
+  //   image: "./skills/jquery.png",
+  // },
+  // {
+  //   title: "Graphql",
+  //   image: "./skills/graphql.png",
+  // },
+  // {
+  //   title: "Nodejs",
+  //   image: "./skills/node.png",
+  // },
+  // {
+  //   title: "MongoDB",
+  //   image: "./skills/mongo.png",
+  // },
+  // {
+  //   title: "PostgreSQL",
+  //   image: "./skills/postgre.png",
+  // },
 ];
